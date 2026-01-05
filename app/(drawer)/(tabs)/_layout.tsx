@@ -18,7 +18,12 @@ export default function TabLayout() {
         headerLeft: () => (
           <Pressable
             onPress={() => navigation.dispatch(DrawerActions.openDrawer())}
-            style={{ marginLeft: 15, marginRight: 10 }}
+            style={({ pressed }) => ({
+              marginLeft: 15,
+              marginRight: 10,
+              opacity: pressed ? 0.6 : 1,
+            })}
+            hitSlop={10}
           >
             <Ionicons name="menu" size={24} color={"white"} />
           </Pressable>
