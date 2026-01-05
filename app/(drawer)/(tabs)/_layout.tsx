@@ -28,7 +28,6 @@ export default function TabLayout() {
             <Ionicons name="menu" size={24} color={"white"} />
           </Pressable>
         ),
-        // tabBarButton: HapticTab,
       }}
     >
       <Tabs.Screen
