@@ -6,7 +6,7 @@ export default function DrawerLayout() {
     <Drawer
       screenOptions={{
         drawerStyle: {
-          width: 240,
+          width: "60%",
         },
       }}
     >
