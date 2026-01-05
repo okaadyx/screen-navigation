@@ -1,10 +1,9 @@
-import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 
-export default function NotificationsScreen() {
+export default function WishlistScreen() {
   return (
     <View style={styles.titleContainer}>
-      <Text style={styles.textStyle}>Notification Screen</Text>
+      <Text style={styles.textStyle}>Wishlist Screen</Text>
     </View>
   );
 }

@@ -1,50 +1,67 @@
-# Welcome to your Expo app 👋
+# Screen Navigation
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This project is a React Native application built with Expo, demonstrating a screen navigation setup using a drawer and tab navigator.
 
-## Get started
+## 🚀 Getting Started
 
-1. Install dependencies
+### Prerequisites
 
-   ```bash
+- Node.js
+- Expo CLI
+
+### Installation
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/okaadyx/screen-navigation.git
+   ```
+2. Install NPM packages
+   ```sh
    npm install
    ```
-
-2. Start the app
-
-   ```bash
-   npx expo start
+3. Start the development server
+   ```sh
+   npm start
    ```
 
-In the output, you'll find options to open the app in a
+## 📜 Available Scripts
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- `npm start`: Starts the development server.
+- `npm run android`: Runs the app on a connected Android device or emulator.
+- `npm run ios`: Runs the app on the iOS simulator.
+- `npm run web`: Runs the app in a web browser.
+- `npm run lint`: Lints the code using ESLint.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 📁 Project Structure
 
-## Get a fresh project
+The project uses a file-based routing system with `expo-router`.
 
-When you're ready, run:
-
-```bash
-npm run reset-project
+```
+app/
+├── (drawer)/               # Drawer navigator layout
+│   ├── (tabs)/             # Tab navigator layout
+│   │   ├── explore.tsx
+│   │   ├── index.tsx
+│   │   ├── notification.tsx
+│   │   └── settings.tsx
+│   ├── contact.tsx
+│   ├── profile.tsx
+│   └── wishlist.tsx
+├── modal.tsx
+└── _layout.tsx
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Dependencies
 
-## Learn more
+This project uses the following major dependencies:
 
-To learn more about developing your project with Expo, look at the following resources:
+- `react`: A JavaScript library for building user interfaces.
+- `react-native`: A framework for building native apps with React.
+- `expo`: A framework and a platform for universal React applications.
+- `expo-router`: A file-based router for React Native and web applications.
+- `@react-navigation/drawer`: Drawer navigation for React Navigation.
+- `@react-navigation/bottom-tabs`: Bottom tab navigator for React Navigation.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## 🤝 Contributing
 
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Contributions, issues, and feature requests are welcome!

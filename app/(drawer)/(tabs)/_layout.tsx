@@ -1,10 +1,10 @@
 import { Tabs, useNavigation } from "expo-router";
 import React from "react";
 
-import { HapticTab } from "@/components/haptic-tab";
 import { Colors } from "@/constants/theme";
 import { useColorScheme } from "@/hooks/use-color-scheme";
 import { Ionicons } from "@expo/vector-icons";
+import { DrawerActions } from "@react-navigation/native";
 import { Pressable } from "react-native";
 
 export default function TabLayout() {
@@ -17,13 +17,13 @@ export default function TabLayout() {
         tabBarActiveTintColor: Colors[colorScheme ?? "light"].tint,
         headerLeft: () => (
           <Pressable
-            onPress={() => navigation.openDrawer()}
+            onPress={() => navigation.dispatch(DrawerActions.openDrawer())}
             style={{ marginLeft: 15, marginRight: 10 }}
           >
             <Ionicons name="menu" size={24} color={"white"} />
           </Pressable>
         ),
-        tabBarButton: HapticTab,
+        // tabBarButton: HapticTab,
       }}
     >
       <Tabs.Screen
